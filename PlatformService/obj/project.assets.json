@@ -6044,11 +6044,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\MyProjectMicroService\\PlatformService\\PlatformService.csproj",
+      "projectUniqueName": "d:\\Projects\\MicroServise\\PlatformService\\PlatformService.csproj",
       "projectName": "PlatformService",
-      "projectPath": "D:\\MyProjectMicroService\\PlatformService\\PlatformService.csproj",
+      "projectPath": "d:\\Projects\\MicroServise\\PlatformService\\PlatformService.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "D:\\MyProjectMicroService\\PlatformService\\obj\\",
+      "outputPath": "d:\\Projects\\MicroServise\\PlatformService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
