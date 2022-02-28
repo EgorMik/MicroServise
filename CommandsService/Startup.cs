@@ -11,6 +11,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using CommandsService.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace CommandsService
 {
@@ -28,6 +30,9 @@ namespace CommandsService
         {
 
             services.AddControllers();
+            services.AddDbContext<AppDbContext>(opt => opt.UseInMemoryDatabase("InMen"));
+            services.AddScoped<ICommandRepo, CommandRepo>();
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "CommandsService", Version = "v1" });
